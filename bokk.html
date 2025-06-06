@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<style>
+body{
+background-color:Pink;
+}
+h1{
+color:purple;
+margin:auto;
+text-align:center;
+margin-top:50px;
+}
+h2{
+color:green;
+margin:auto;
+text-align:center;
+margin-top:10px;
+}
+</style>
+</head>
+<body>
+<!-- <h1>Table Booked Successfully..</h1> -->
+<!-- <h2> Enjoy your Dinner <br> have a nice day</h2> -->
+<h2>Booking Confirmation</h2>
+<h3 id="displayname" align="center"></h3>
+<h3 id="displayMobile" align="center"></h3>
+
+<script>
+	const name = localStorage.getItem("userName");
+	const mobile = localStorage.getItem("userMobile");
+	document.getElementById("displayname").textContent = "Thank you for Booking, " + name + "!";
+	document.getElementById("displayMobile").textContent = "we will contact you at, " + mobile;
+</script>
+
+</body>
+</html>
